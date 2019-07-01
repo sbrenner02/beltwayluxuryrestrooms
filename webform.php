@@ -19,6 +19,7 @@ if($_POST["submit"]) {
 
 <html>
 <head>
+    <link rel='stylesheet' type='text/css' href='style.css'>
     <meta charset="utf-8">
     <title>Contact form to email</title>
 </head>
@@ -28,16 +29,22 @@ if($_POST["submit"]) {
     <?=$thankYou ?>
 
     <form method="post" action="contact.php">
-        <label>Name:</label>
-        <input name="sender">
+        <p>
+          <label>Name:</label>
+          <input name="sender">
+          <label><br>
+            <br>
+            Email address:</label>
+          <input name="senderEmail">
+        </p>
+        <p>
 
-        <label>Email address:</label>
-        <input name="senderEmail">
+          <label>Message:</label>
+          <textarea rows="5" cols="100" name="message"></textarea>
 
-        <label>Message:</label>
-        <textarea rows="5" cols="20" name="message"></textarea>
-
-        <input type="submit" name="submit">
+          <br>
+          <input type="submit" name="submit">
+        </p>
     </form>
 
 </body>
