@@ -109,7 +109,7 @@ text-align: right;
   margin: 0px 0px;
   padding: 15px 15px;
   grid-template-areas: "one two";
-  grid-template-rows: 700px;
+  grid-template-rows: 900px;
   grid-template-columns: 50% 50%;
   grid-gap: 20px;
   grid-auto-columns: auto;
