@@ -20,23 +20,129 @@ li {
 h1{
   font-variant: small-caps;
   text-decoration: underline;
+  padding: 0;
+  margin: 0;
+  color: #4a4a4a;
 }
 
 h2{
+  color: #db6165;
 }
 
 h3{
   color: #000;
-  font-size: 70px;
-  margin-top: 15px;
-  padding-top: 10px;
+  font-size: 30px;
+  margin-top: 5px;
+  padding-top: 5px;
   font-family: 'Lobster', cursive;
+  font-weight: bolder;
+  font-style: italic;
+}
 
+.title p{
+  color: #fff;
+  text-shadow: 0 0 50px black;
+}
+
+@media (min-width:480px){
+
+  h3{
+    color: #000;
+    font-size: 28px;
+    margin: 15px 0px 50px 0px;
+    padding-top: 10px;
+  }
+
+  .title p{
+    margin: -22px 3px -20px 0px;
+    color: #fff;
+    text-shadow: 0 0 50px black;
+    font-size: 11px;
+  }
+
+.banner{
+  height: 250px;
+}
+
+}
+
+@media (min-width:600px){
+
+  h3{
+    color: #000;
+    font-size: 28px;
+    margin: 15px 0px 50px 0px;
+    padding-top: 10px;
+  }
+
+  .title p{
+    margin: -15px 0px -20px 0px;
+    color: #fff;
+    text-shadow: 0 0 50px black;
+    font-size: 15px;
+  }
+
+.banner{
+  height: 250px;
+}
+
+}
+
+@media (min-width:800px){
+
+h3{
+  color: #000;
+  font-size: 40px;
+  margin: 15px 0px 50px 0px;
+  padding-top: 10px;
+}
+
+.title p{
+  margin: -15px 0px 5px 0px;
+  color: #fff;
+  text-shadow: 0 0 50px black;
+}
+
+}
+
+
+@media (min-width:1000px){
+
+h3{
+  color: #000;
+  font-size: 70px;
+  margin: 15px 0px 30px 0px;
+  padding-top: 10px;
+
+}
+
+.title p{
+  margin: -15px 0px 5px 0px;
+  color: #fff;
+  text-shadow: 0 0 50px black;
+}
+
+}
+
+.title{
+  grid-area: title;
+  text-align: center;
+  text-shadow: 0 0 50px white;
+}
+
+.titlecontact{
+margin-top: 5px;
+padding-right: 20px;
+text-align: right;
 }
 
 p {
   color: #000;
-  padding: 0px 10px 0px 10px;
+  word-wrap: break-word;
+}
+
+.justify{
+  text-align: justify;
 }
 
 a {
@@ -59,31 +165,13 @@ form{
   background-color: gold;
 }
 
-.redbg{
-  background-color: darkred;
-}
-
 .logo{
   grid-area: logo;
   padding: 0px 20px;
-  width: 250px;
+  width: 100%;
+  min-width: 200px;
+  max-width: 250px;
 }
-
-.title{
-  grid-area: title;
-  text-align: center;
-}
-
-.title p{
-  margin-top: -50px;
-}
-
-.titlecontact{
-margin-top: 5px;
-padding-right: 20px;
-text-align: right;
-}
-
 
 .italic{
     font-style: italic;
@@ -92,9 +180,6 @@ text-align: right;
 .banner{
   display: grid;
   grid-template-areas: "logo title";
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr;
-  align-items: left;
   background-image: url("images/skyline.png");
   background-repeat: repeat-x;
   background-position: center;
@@ -108,17 +193,14 @@ text-align: right;
   margin: 0px 0px;
   padding: 15px 15px;
   grid-template-areas: "one two";
-  grid-template-rows: 900px;
+  grid-template-rows: repeat(auto-fill, minmax(50px, 100%) );
   grid-template-columns: 50% 50%;
-  grid-gap: 20px;
-  grid-auto-columns: auto;
-  grid-auto-rows: auto;
-  grid-auto-flow: column;
-  align-items: flex-start;
-  justify-content: space-around;
-  overflow: hidden;
+  grid-gap: 15px;
 }
 
+.content p{
+padding: 0 5px 0 5px;
+}
 
 .info{
 box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
