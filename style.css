@@ -2,7 +2,7 @@ body{
   background-color: #FFFFFF;
   margin: 0 auto;
   font-family: Helvetica,Arial,sans-serif;
-
+  background-image: url("images/white-tiles.png");
 }
 
 ul {
@@ -146,7 +146,7 @@ p {
 }
 
 a {
-  color: #fff;
+  color: #000;
 }
 
 form{
@@ -184,7 +184,7 @@ form{
   background-repeat: repeat-x;
   background-position: center;
   border-bottom: 2px;
-  border-style: none none solid none;
+  border-style: solid none solid none;
 
 }
 
@@ -217,11 +217,46 @@ grid-area: two;
 
 .navigation{
   display: grid;
-  margin: 0px 0px;
+  width: 100%;
+  border: 0 0 .5px 0;
+  border-style: none none groove none;
 }
 
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: ghostwhite;
+  text-align: center;
+  height: 35px;
+}
+
+.navigation li {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  display: inline-block;
+  position: sticky;
+  padding: 7px 15px 2px 15px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 300;
+}
+
+.navigation li a:hover {
+  color: #db6165;
+}
+
+.navigation li a:active {
+  text-decoration: underline;
+}
+
+
 .content{
-  width: 100%;
   margin: 0px auto;
 }
 
@@ -231,8 +266,6 @@ grid-area: two;
 
 .pageframe
 {
-  background-color: #FFFFFF;
-  background-image: url("images/white-tiles.png");
   margin: 0px auto;
   width: 80%;
   padding-top: 10px
