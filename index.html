@@ -75,13 +75,14 @@ luxury, and affordability for your portable sanitation needs! Please call or ema
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO0c7maMNh2FhKCqaGwMy3QVa_0B6MwBg&callback=myMap"></script>
   <script>
 function myMap() {
+var myLatLng = {lat: 39.047572, lng: -76.629108};
 var mapProp= {
-  center:new google.maps.LatLng(39.047572,-76.629108),
+  center:new google.maps.LatLng(myLatLng),
   zoom:5,
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
-var marker = new google.maps.Marker({position: myCenter});
+var marker = new google.maps.Marker({position: myLatLng, map: map, title:'Beltway Luxury Restrooms'});
 
 marker.setMap(map);
 
