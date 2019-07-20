@@ -72,6 +72,7 @@ luxury, and affordability for your portable sanitation needs! Please call or ema
 </form>
 </div>
 <div class="info two" id="googleMap">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO0c7maMNh2FhKCqaGwMy3QVa_0B6MwBg&callback=myMap"></script>
   <script>
 function myMap() {
 var mapProp= {
@@ -80,9 +81,12 @@ var mapProp= {
 };
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
+var marker = new google.maps.Marker({position: myCenter});
+
+marker.setMap(map);
+
 </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO0c7maMNh2FhKCqaGwMy3QVa_0B6MwBg&callback=myMap"></script>
 </div>
 </div>
 </div>
