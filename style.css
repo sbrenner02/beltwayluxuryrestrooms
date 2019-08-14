@@ -3,6 +3,7 @@ body{
   margin: 0 auto;
   font-family: Helvetica,Arial,sans-serif;
   background-image: url("images/white-tiles.png");
+  line-height: 1.5;
 }
 
 ul {
@@ -14,6 +15,11 @@ ul {
 
 li {
 
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
 }
 
 a{
@@ -48,8 +54,8 @@ h3{
 }
 
 .title p{
-  color: #fff;
-  text-shadow: 0 0 50px black;
+  color: #000;
+  text-shadow: 0 0 50px white;
 }
 
 @media (min-width:480px){
@@ -57,36 +63,12 @@ h3{
   h3{
     color: #000;
     font-size: 28px;
-    margin: 15px 0px 50px 0px;
-    padding-top: 10px;
+    margin: 5px 0px 30px 0px;
+    padding-top: 5px;
   }
 
   .title p{
     margin: -22px 3px -20px 0px;
-    color: #fff;
-    text-shadow: 0 0 50px black;
-    font-size: 11px;
-  }
-
-.banner{
-  height: 250px;
-}
-
-}
-
-@media (min-width:600px){
-
-  h3{
-    color: #000;
-    font-size: 28px;
-    margin: 15px 0px 50px 0px;
-    padding-top: 10px;
-  }
-
-  .title p{
-    margin: -15px 0px -20px 0px;
-    color: #fff;
-    text-shadow: 0 0 50px black;
     font-size: 15px;
   }
 
@@ -96,29 +78,61 @@ h3{
 
 }
 
-@media (min-width:800px){
+.smalltext{
+  display: block;
+}
+
+
+@media screen and (max-width: 600px){
+
+  h3{
+    color: #000;
+    font-size: 28px;
+    margin: 7px 0px 30px 0px;
+    padding-top: 10px;
+  }
+
+  .title p{
+    margin: -15px 0px -20px 0px;
+    font-size: 18px;
+  }
+
+.banner{
+  height: 250px;
+}
+
+.smalltext{
+  display: none
+}
+
+}
+
+@media screen and (min-width:800px){
 
 h3{
   color: #000;
   font-size: 40px;
-  margin: 15px 0px 50px 0px;
-  padding-top: 10px;
+  margin: 10px 0px 35px 0px;
+  padding: 5px 15px 0px 0px;
 }
 
 .title p{
-  margin: -15px 0px 5px 0px;
-  color: #fff;
-  text-shadow: 0 0 50px black;
+  margin: -20px 0px 5px 0px;
+  font-size: 22px;
+}
+
+.logo{
+  margin-left: 30px;
 }
 
 }
 
 
-@media (min-width:1000px){
+@media screen and (min-width:1050px){
 
 h3{
   color: #000;
-  font-size: 70px;
+  font-size: 60px;
   margin: 15px 0px 30px 0px;
   padding-top: 10px;
 
@@ -126,9 +140,11 @@ h3{
 
 .title p{
   margin: -15px 0px 5px 0px;
-  color: #fff;
-  text-shadow: 0 0 15px black;
-  font-size: 20px;
+  font-size: 26px;
+}
+
+.logo{
+  margin-left: 50px;
 }
 
 }
@@ -149,6 +165,8 @@ color: #db6165;
 p {
   color: #000;
   word-wrap: break-word;
+  padding: 0 10px;
+  font-size: 16px;
 }
 
 .justify{
@@ -175,8 +193,18 @@ form{
   padding: 10px 10px;
 }
 
-.formwidth{
+.messagebox{
+  display: block;
   width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .textarea{
@@ -189,6 +217,10 @@ form{
 
 .redbg{
   background-color: #dd6365;
+}
+
+.whitebg{
+  background-color: #fff;
 }
 
 .logo{
@@ -219,7 +251,7 @@ form{
   margin: 0px 0px;
   padding: 0px 0px;
   grid-template-areas: "one two";
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
 }
 
@@ -269,6 +301,7 @@ grid-area: two;
   border: 0 0 .5px 0;
   border-style: none none groove none;
   top: 0;
+  padding: 5px 0;
 }
 
 .navigation ul {
@@ -308,14 +341,14 @@ grid-area: two;
 }
 
 .solophoto{
-  width: 75%;
+  width: 100%;
 }
 
 .pageframe
 {
   margin: 0px auto;
   width: 80%;
-  padding-top: 10px
+  padding-top: 10px;
 }
 
 .center {
@@ -375,4 +408,55 @@ grid-area: two;
 
 .footer{
   padding: 15px 0 25px 0;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-date-phone{
+    height: calc(1.5em + 0.75rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-right: 20px;
+  }
+}
+
+.form-inline {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }

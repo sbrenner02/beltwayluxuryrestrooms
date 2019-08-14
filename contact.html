@@ -1,9 +1,31 @@
+<!--<?php
+
+if($_POST["submit"]) {
+    $recipient="sbrenner02@gmail.com";
+    $subject="Beltway Luxury Restrooms Rental Inquery";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+    $phone=$_POST["senderPhone"];
+    $startDate=$_POST["startDate"];
+    $endDate=$_POST["endDate"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\nPhone Number: $senderPhone\nStart Date:$startDate\nEnd Date: $endDate\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+
+?>
+!-->
 <!DOCTYPE html>
 <html>
 <head>
   <link rel='stylesheet' type='text/css' href='style.css'>
   <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Beltway Luxury Restrooms</title>
 </head>
 <body>
@@ -11,55 +33,45 @@
   <div class="banner">
 <a href="index.html"><img class="logo" src="images/blrlogo.png"></a>
 <div class="title">
-  <div>
   <h3>Beltway Luxury Restrooms</h3>
-  <p> <b>Portable Luxury Bathrooms For Any Occasion</b></p><br><br><br>
-<p class="italic"><b>"Lobbying for a Better Bathroom Experience"</b></p>
-</div>
+  <p> <b>Portable Luxury Bathrooms For Any Occasion</b></p><br>
+<p class="italic smalltext"><b>"Lobbying for a Better Bathroom Experience"</b></p>
 </div>
   </div>
   <div class="navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="rentals.html">Rentals & Services</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html">Get a Free Quote</a></li>
       <li><a href="faq.html">FAQs</a></li>
     </ul>
   </div>
       <div class="pageframe">
 <h1 class="center">Get a Free Quote Today!</h1><br><br>
-<form method="post" name="contactform" action="" class="fullborder">
-      <label><b>Name:</b></label><br>
-      <input name="sender" type="text" size="50"><br><br>
-      <label><b>Email address:</b></label><br>
-      <input name="senderEmail" type="email" size="50"><br><br>
-      <label><b>Phone Number:</b></label><br>
-      <input name="senderPhone" type="tel" maxlength="10"><br><br>
-      <label><b>Rental Start Date: <b></label><input type="date" name="startDate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label><b>Rental End Date: </b> <input type="date" name="endDate"><br><br>
-      <label><b>Message:</b></label><br>
-      <textarea rows="10" class="formwidth textarea" name="message" ></textarea>
-
-      <br><br>
-      <input type="submit" name="submit">
+<p class="center">Take a moment a fill out this short form about your rental needs and we will be in touch with you as soon as possible!</p><br>
+<!--
+            <?=$thankYou ?>
+!-->
+<form method="post" name="contactform" action="" class="fullborder whitebg form-inline">
+      <label><b>Name: </b></label>
+      <input name="sender" type="text" size="50" class="form-control" required><br>
+      <label><b>Email address: </b></label>
+      <input name="senderEmail" type="text" size="50" class="form-control" required><br>
+      <label><b>Phone Number: </b></label>
+      <input name="senderPhone" type="text" maxlength="10" class="form-date-phone" required>
+      <label><b>Rental Start Date: <b></label><input type="date" name="startDate" class="form-date-phone" required><label><b>Rental End Date: </b> <input type="date" name="endDate" class="form-date-phone" required><br><br>
+      <label><b>Message: </b></label><br>
+      <textarea rows="10" type="text" class="messagebox textarea" name="message" ></textarea>
+      <br>
+      <input type="submit" name="submit" class="btn-block">
 </form>
-</div>
-<br><br><br>
-<div>
-<p class="center">joey@beltwayrestrooms.com<br><br>
-BELTWAY RESTROOM TRAILERS<br><br>
-1473 Waterbury Road<br>
-Crownsville, MD 21032<br><br>
-(301) 261-0336
-</p>
-</div>
-</div>
 </div>
 <div class="bottomnav center redbg">
 <div class="bottomnavlinks">
   <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="rentals.html">Rentals & Services</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="contact.html">Get a Free Quote</a></li>
     <li><a href="faq.html">FAQs</a></li>
   </ul>
       <a href="https://www.facebook.com/Beltway-Luxury-Restrooms-2368499826530427"><img class="socialicon" src="images/fbicon.png"></a><br>
