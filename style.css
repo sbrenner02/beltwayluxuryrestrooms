@@ -58,85 +58,7 @@ h3{
   text-shadow: 0 0 50px white;
 }
 
-@media (min-width:480px){
 
-  h3{
-    color: #000;
-    font-size: 28px;
-    margin: 5px 0px 30px 0px;
-    padding-top: 5px;
-  }
-
-  .title p{
-    margin: -22px 3px -20px 0px;
-    font-size: 15px;
-  }
-
-.banner{
-  height: 250px;
-}
-
-}
-
-.smalltext{
-  display: block;
-}
-
-
-@media screen and (max-width: 600px){
-
-  h3{
-    color: #000;
-    font-size: 28px;
-    margin: 7px 0px 30px 0px;
-    padding-top: 10px;
-  }
-
-  .title p{
-    margin: -15px 0px -20px 0px;
-    font-size: 18px;
-  }
-
-.banner{
-  height: 250px;
-}
-
-.smalltext{
-  display: none
-}
-
-}
-
-@media screen and (min-width:800px){
-
-h3{
-  color: #000;
-  font-size: 40px;
-  margin: 10px 0px 35px 0px;
-  padding: 5px 15px 0px 0px;
-}
-
-.title p{
-  margin: -20px 0px 5px 0px;
-  font-size: 22px;
-}
-
-.logo{
-  margin-left: 30px;
-}
-
-}
-
-
-@media screen and (min-width:1050px){
-
-h3{
-  color: #000;
-  font-size: 60px;
-  margin: 15px 0px 30px 0px;
-  padding-top: 10px;
-
-}
 
 .title p{
   margin: -15px 0px 5px 0px;
@@ -463,4 +385,68 @@ input[type=date] {
   padding: 6px 10px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 600px){
+
+  h3{
+    color: #000;
+    font-size: 28px;
+    margin: 7px 0px 30px 0px;
+    padding-top: 10px;
+  }
+
+  .title p{
+    margin: -15px 0px -20px 0px;
+    font-size: 18px;
+  }
+
+.banner{
+  height: 250px;
+}
+
+.smalltext{
+  display: none
+}
+
+.navigation li {
+  font-size: 16px;
+}
+
+.logo{
+  margin-left: 5px;
+}
+
+}
+
+@media screen and (min-width:800px){
+
+h3{
+  color: #000;
+  font-size: 40px;
+  margin: 10px 0px 35px 0px;
+  padding: 5px 15px 0px 0px;
+}
+
+.title p{
+  margin: -20px 0px 5px 0px;
+  font-size: 22px;
+}
+
+.logo{
+  margin-left: 30px;
+}
+
+}
+
+
+@media screen and (min-width:1050px){
+
+h3{
+  color: #000;
+  font-size: 60px;
+  margin: 15px 0px 30px 0px;
+  padding-top: 10px;
+
 }
