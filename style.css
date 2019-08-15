@@ -8,7 +8,7 @@ body{
 
 @font-face {
 font-family: "Arsenal";
-src: url("fonts/Arsenal/Arsenal-Regular.ttf");
+src: url("fonts/Arsenal/Arsenal-Bold.ttf");
 }
 
 .f1{
@@ -34,12 +34,12 @@ src: url("fonts/Josefin_sans/joesfinsans-regular.ttf");
 }
 
 @font-face {
-font-family: "Patua";
+font-family: "pat";
 src: url("fonts/Patua_One/PatuaOne-Regular.ttf");
 }
 
 .f4{
-  font-family: Patua;
+  font-family: pat;
 }
 
 @font-face {
