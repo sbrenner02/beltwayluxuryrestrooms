@@ -13,10 +13,6 @@ ul {
   padding: 0;
 }
 
-li {
-
-}
-
 img {
   vertical-align: middle;
   border-style: none;
@@ -58,8 +54,6 @@ h3{
   text-shadow: 0 0 50px white;
 }
 
-
-
 .title p{
   margin: -15px 0px 5px 0px;
   font-size: 26px;
@@ -67,8 +61,6 @@ h3{
 
 .logo{
   margin-left: 50px;
-}
-
 }
 
 .title{
@@ -108,7 +100,7 @@ p {
 }
 
 .socialicon{
-  padding: 0px 15px 15px 15px;;
+  padding: 0px 15px 15px 15px;
 }
 
 form{
@@ -165,7 +157,6 @@ form{
   background-position: center;
   border-bottom: 2px;
   border-style: solid none solid none;
-
 }
 
 .content{
@@ -236,16 +227,11 @@ grid-area: two;
   text-decoration: underline;
 }
 
-.contentphoto{
+.photo{
   width: 100%;
 }
 
-.solophoto{
-  width: 100%;
-}
-
-.pageframe
-{
+.pageframe {
   margin: 0px auto;
   width: 80%;
   padding-top: 10px;
@@ -369,13 +355,7 @@ grid-area: two;
   height: calc(1.5em + 0.75rem + 2px);
 }
 
-input[type=text] {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
-textarea[type=text] {
+input[type=text], textarea[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -411,11 +391,26 @@ input[type=date] {
 }
 
 .navigation li {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .logo{
-  margin-left: 5px;
+  margin-left: 0px;
+}
+
+.bottomnav{
+  padding: 5px 0 0 0;
+  margin-top: 15px;
+  width: 100%;
+  border: 0 0 1px 0;
+  border-style: solid none solid none;
+  border-color: #000;
+  font-size: 11px;
+}
+
+.footer{
+  padding: 10px 0 15px 0;
+  font-size: 12px;
 }
 
 }
@@ -449,4 +444,5 @@ h3{
   margin: 15px 0px 30px 0px;
   padding-top: 10px;
 
+}
 }
