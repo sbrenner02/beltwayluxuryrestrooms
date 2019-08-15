@@ -6,6 +6,52 @@ body{
   line-height: 1.5;
 }
 
+@font-face {
+font-family: "Arsenal";
+src: url("fonts/Arsenal/Arsenal-Regular.ttf");
+}
+
+.f1{
+  font-family: Arsenal;
+}
+
+@font-face {
+font-family: "breeserif";
+src: url("fonts/Bree_Serif/BreeSerif-Regular.ttf");
+}
+
+.f2{
+  font-family: breeserif;
+}
+
+@font-face {
+font-family: "JoesefinSans";
+src: url("fonts/Josefin_sans/joesfinsans-regular.ttf");
+}
+
+.f3{
+  font-family: josefinsans;
+}
+
+@font-face {
+font-family: "Patua";
+src: url("fonts/Patua_One/PatuaOne-Regular.ttf");
+}
+
+.f4{
+  font-family: Patua;
+}
+
+@font-face {
+font-family: "Trochut";
+src: url("fonts/trochut/trochut-regular.ttf");
+}
+
+.f5{
+  font-family: Trochut;
+}
+
+
 ul {
   list-style-type: none;
   margin: 0 auto;
@@ -46,7 +92,6 @@ h3{
   padding-top: 5px;
   font-family: Verdana, sans-serif;
   font-weight: bolder;
-  font-style: italic;
 }
 
 .title p{
@@ -355,7 +400,7 @@ grid-area: two;
   height: calc(1.5em + 0.75rem + 2px);
 }
 
-input[type=text], textarea[type=text] {
+input[type=text], input[type=tel], input[type="number"], textarea[type=text] {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
