@@ -9,8 +9,11 @@ if($_POST["submit"]) {
     $phone=$_POST["senderPhone"];
     $startDate=$_POST["startDate"];
     $endDate=$_POST["endDate"];
+    $address=$_POST["deliveryAddress"];
+    $eventType=$_POST["eventType"];
+    $guests=$_POST["guestNumber"];
 
-    $mailBody="Name: $sender\nEmail: $senderEmail\nPhone Number: $senderPhone\nStart Date:$startDate\nEnd Date: $endDate\n\n$message";
+    $mailBody="Name: $sender\nEmail: $senderEmail\nPhone Number: $senderPhone\nNumber of People: $guests\nType of Event: $eventType\nStart Date:$startDate\nEnd Date: $endDate\n\nAdditional Details: $message";
 
     mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
@@ -58,10 +61,17 @@ if($_POST["submit"]) {
       <label><b>Email address: </b></label>
       <input name="senderEmail" type="text" size="50" class="form-control" required><br>
       <label><b>Phone Number: </b></label><br>
-      <input name="senderPhone" type="text" maxlength="10" class="form-phone" required><br><br>
+      <input name="senderPhone" type="tel" maxlength="10" class="form-phone" required><br><br>
+      <label><b>Type of Event</b></label>
+      <input name="eventType" type="text" size="50" class="form-control" required><br>
+      <label><b>Expected Number of Guests</b></label>
+      <input name="guestNumber" type="number" min="0" size="50" class="form-control" required><br>
+      <label><b>Delivery Address</b></label>
+      <input name="deliveryAddress" type="text" size="50" class="form-control" required><br>
       <label><b>Rental Start Date: </b><br><br></label><input type="date" name="startDate" class="form-date" required><br><br>
       <label><b>Rental End Date: </b><br><br></label> <input type="date" name="endDate" class="form-date" required><br><br>
-      <label><b>Message: </b></label><br>
+      <label><b>Additional Details or Needs</b></label><br>
+
       <textarea rows="10" type="text" class="messagebox textarea" name="message" ></textarea>
       <br>
       <input type="submit" name="submit" class="btn-block">
@@ -75,7 +85,7 @@ if($_POST["submit"]) {
     <li><a href="contact.html">Get a Quote</a></li>
     <li><a href="faq.html">FAQs</a></li>
   </ul>
-      <a href="https://www.facebook.com/Beltway-Luxury-Restrooms-2368499826530427"><img class="socialicon" src="images/fbicon.png"></a><br>
+      <a href="https://www.facebook.com/Beltway-Luxury-Restrooms-2368499826530427" target="_blank"><img class="socialicon" src="images/fbicon.png"></a><br>
   1473 Waterbury Road, Crownsville, Maryland 21032, United States
   | <a href="tel:3012610336">(301) 261-0336</a>
   | <a href=mailto:joey@beltwayrestrooms.com>joey@beltwayrestrooms.com</a>
