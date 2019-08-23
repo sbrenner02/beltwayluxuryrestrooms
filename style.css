@@ -24,34 +24,6 @@ src: url("fonts/Bree_Serif/BreeSerif-Regular.ttf");
   font-family: breeserif;
 }
 
-@font-face {
-font-family: "JoesefinSans";
-src: url("fonts/Josefin_sans/joesfinsans-regular.ttf");
-}
-
-.f3{
-  font-family: josefinsans;
-}
-
-@font-face {
-font-family: "pat";
-src: url("fonts/Patua_One/PatuaOne-Regular.ttf");
-}
-
-.f4{
-  font-family: pat;
-}
-
-@font-face {
-font-family: "Trochut";
-src: url("fonts/trochut/trochut-bold.ttf");
-}
-
-.f5{
-  font-family: Trochut;
-}
-
-
 ul {
   list-style-type: none;
   margin: 0 auto;
@@ -183,7 +155,7 @@ form{
 
 .logo{
   grid-area: logo;
-  padding: 0px 20px;
+  padding: 5px 20px;
   width: 100%;
   min-width: 200px;
   max-width: 250px;
@@ -269,8 +241,7 @@ grid-area: f;
 
 .navigation li {
   color: #000;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 22px;
   font-variant: small-caps;
   display: inline-block;
   padding: 7px 15px 2px 15px;
@@ -430,8 +401,18 @@ input[type=date] {
   box-sizing: border-box;
 }
 
-
 @media screen and (max-width: 600px){
+  .smalltext{
+    display: none
+  }
+
+  .logo{
+    width: 50%;
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 700px){
 
   h3{
     color: #000;
@@ -441,7 +422,7 @@ input[type=date] {
   }
 
   .title p{
-    margin: -15px 0px -20px 0px;
+    margin: 0px 0px -20px 0px;
     font-size: 18px;
   }
 
@@ -449,12 +430,13 @@ input[type=date] {
   height: 250px;
 }
 
-.smalltext{
-  display: none
+.logo{
+  width: 75%;
+  padding-top: 15px;
 }
 
 .navigation li {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .logo{
